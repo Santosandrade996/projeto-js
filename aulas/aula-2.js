@@ -1,19 +1,23 @@
-//Diferenças entre variaveis e tipos operadores
-//Exercicio de calculo de valor de uma viagem....
+//Estruturas Condicionais
 
-/*let variavel = 10 + 10;
-console.log(variavel);*/
+/*let idade = 20;
 
-//Exercicios
+if(idade>= 18){
+    console.log("Você é maior de idade");
+} else if(idade>=16 && idade < 18) {
+    console.log("Você é menor de idade, mas pode tirar habilitação");
+}else {
+ console.log("Você é menor de idade");   
+}*/
 
-const precoEtanol = 5.79;
-const precoGasolina = 7.49;
-const kmPorLitro = 10;
-const distanciaEmKm = 100;
+//exercício 2
 
-const valorEtanol = (distanciaEmKm / kmPorLitro) * precoEtanol;
-const valorGasolina = (distanciaEmKm / kmPorLitro) * precoGasolina;
+const idade = 25;
 
-
-console.log('Valor a ser gasto com Etanol: R$' + valorEtanol.toFixed(2));
-console.log('Valor a ser gasto com Gasolina: R$' + valorGasolina.toFixed(2));
+if(idade >=18){
+    console.log("Você é maior de idade");
+}else if(idade >=16 && idade < 18) {
+    console.log("Você é menor de idade, mas pode tirar habilitação");
+}else {
+    console.log("Você é menor de idade");
+}
