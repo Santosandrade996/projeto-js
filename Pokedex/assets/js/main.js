@@ -11,7 +11,7 @@ function convertPokemonToLi(pokemon) {
 
             <div class="details">
                 <ol class="types">
-                   ${pokemon.types.map(type => `<li class="type" ${type}</li>`).join('')}
+                   ${pokemon.types.map(type => `<li class="type ${type}">${type}</li>`).join('')}
                 </ol>
 
                  <img src="${pokemon.photo}" alt="${pokemon.name}">
@@ -22,6 +22,6 @@ function convertPokemonToLi(pokemon) {
 
 const pokemonList = document.getElementById('pokemonList');
 
-pokeApi.getPokemons(0, 10).then(pokemons => {
+pokeApi.getPokemons(0, 20).then(pokemons => {
     pokemonList.innerHTML = pokemons.map(convertPokemonToLi).join('');
 });
