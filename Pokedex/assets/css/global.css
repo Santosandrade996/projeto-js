@@ -4,14 +4,14 @@
 }
 
 body {
-    background-color: #ece7e7;
+    background-color: #fffafa;
 }
 
 .content {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     padding: 1rem;
-    background-color: #fff;
+    background-color: #d3d2d2;
     
     
 }
@@ -23,9 +23,9 @@ body {
 @media screen and (min-width: 992px) {
     .content {
         max-width: 992px;
-        height: 100vw;
         margin: 1rem auto;
         border-radius: 1rem;
+        min-height: 100vw;
     }
     
 }
